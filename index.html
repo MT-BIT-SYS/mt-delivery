@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MT Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-badge">MT</div>
+        <div>
+          <p class="brand-subtitle">Fast delivery</p>
+          <h1>MT Delivery</h1>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+      </nav>
+      <button class="nav-button">Order Now</button>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Everything you need</p>
+          <h2>Smart shopping, delivered fast.</h2>
+          <p>
+            Discover top tech, daily essentials, sportswear, school supplies,
+            and more—delivered right to your doorstep.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-btn">Shop Now</button>
+            <button class="secondary-btn">Track Order</button>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="mini-card">
+            <span>Today’s pick</span>
+            <strong>Macbook Neo Pro Air</strong>
+            <small>Best seller</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-section">
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input id="searchInput" type="text" placeholder="Search items" aria-label="Search items" />
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Popular items</p>
+            <h3>Featured Products</h3>
+          </div>
+          <span id="itemCount" class="item-count">0 items</span>
+        </div>
+
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
